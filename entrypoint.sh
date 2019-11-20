@@ -26,7 +26,7 @@ rm -fr source/_posts
 mv  ${GITHUB_WORKSPACE}/*  source/
 git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git
 mv ${GITHUB_ACTOR}.github.io public
-
+rm node_modules/anymatch/README.md
 # generate&publish
 npx hexo g
 npx hexo d
