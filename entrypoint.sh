@@ -24,7 +24,6 @@ rm -fr source/_posts
  
 
 mv  ${GITHUB_WORKSPACE}/*  source/
- https://github.com/ericzyh/ericzyh.github.io.git
 
 git clone https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_ACTOR}/ericzyh.github.io.git
 
