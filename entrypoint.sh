@@ -23,7 +23,7 @@ npx hexo init
 rm -fr source/_posts
  
 
-rsync -av --exclude  workspace ../   workspace/source/
+mv  ../*  source/
  
  
 git clone git@github.com:ericzyh/ericzyh.github.io.git
