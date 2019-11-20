@@ -24,7 +24,7 @@ rm -fr source/_posts
  
 
 mv  ${GITHUB_WORKSPACE}/*  source/
-git clone https://${GITHUB_ACTOR}:${secrets.hexo_token}@github.com/${GITHUB_ACTOR}/ericzyh.github.io.git
+git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_ACTOR}/ericzyh.github.io.git
 mv ericzyh.github.io.git public
 
 # generate&publish
