@@ -20,7 +20,7 @@ cd workspace
 
 npx hexo init
 
-rm source/_posts
+rm -fr source/_posts
 
 mv ../* workspace/source/
  
