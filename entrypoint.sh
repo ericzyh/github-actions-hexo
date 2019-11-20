@@ -22,7 +22,10 @@ npx hexo init
 
 rm -fr source/_posts
 
-mv ../* workspace/source/
+apt install rsync   #安装rsync
+
+rsync -av --exclude  workspace ../   workspace/source/
+ 
  
 git clone git@github.com:ericzyh/ericzyh.github.io.git
 
