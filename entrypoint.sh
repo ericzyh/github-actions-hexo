@@ -21,8 +21,7 @@ cd workspace
 npx hexo init
 
 rm -fr source/_posts
-
-apt-get install rsync   #安装rsync
+ 
 
 rsync -av --exclude  workspace ../   workspace/source/
  
