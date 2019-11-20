@@ -25,7 +25,7 @@ rm -fr source/_posts
 
 mv  ${GITHUB_WORKSPACE}/*  source/
 git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_ACTOR}/ericzyh.github.io.git
-mv ericzyh.github.io.git public
+mv ericzyh.github.io public
 
 # generate&publish
 npx hexo g
