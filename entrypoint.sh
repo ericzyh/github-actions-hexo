@@ -27,6 +27,8 @@ mv  ${GITHUB_WORKSPACE}/*  source/
 
 git clone https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_ACTOR}/ericzyh.github.io.git
 
+echo "https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_ACTOR}/ericzyh.github.io.git"
+
 mv ericzyh.github.io.git public
 
 # generate&publish
