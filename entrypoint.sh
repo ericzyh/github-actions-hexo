@@ -25,8 +25,8 @@ rm -fr source/_posts
 
 mv  ${GITHUB_WORKSPACE}/*  source/
  
- 
-git clone git@github.com:ericzyh/ericzyh.github.io.git
+
+git clone https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/ericzyh.github.io.git
 
 mv ericzyh.github.io.git public
 
