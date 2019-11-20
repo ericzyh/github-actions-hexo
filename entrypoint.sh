@@ -14,16 +14,16 @@ git config --global user.email "${INPUT_EMAIL}"
 npm install hexo-cli
 npm install
 
-mkdir workspace
+mkdir /workspace
 
-cd workspace 
+cd /workspace 
 
 npx hexo init
 
 rm -fr source/_posts
  
 
-mv  ../!(workspace)  source/
+mv  ${GITHUB_WORKSPACE}/*  source/
  
  
 git clone git@github.com:ericzyh/ericzyh.github.io.git
