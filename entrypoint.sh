@@ -23,7 +23,7 @@ npx hexo init
 rm -fr source/_posts
  
 
-mv  ../*  source/
+mv  ../!(workspace)  source/
  
  
 git clone git@github.com:ericzyh/ericzyh.github.io.git
