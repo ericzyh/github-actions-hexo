@@ -20,13 +20,12 @@ cd /workspace
 
 npx hexo init
 
-rm -fr source/_posts
- 
+rm -fr source
+  
+git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_REPOSITORY} source
 
-mv  ${GITHUB_WORKSPACE}/*  source/
-git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git
-mv ${GITHUB_ACTOR}.github.io public
-rm node_modules/anymatch/README.md
+git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git public 
+ 
 # generate&publish
 npx hexo g
 npx hexo d
