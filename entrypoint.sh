@@ -24,7 +24,7 @@ rm -fr source
   
 git clone https://${GITHUB_ACTOR}@github.com/${GITHUB_REPOSITORY} source
 
-git clone https://${GITHUB_ACTOR}:7e3c71df573e9103c3366d191792f6f688316953@github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git public 
+git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_ACTOR}/${GITHUB_ACTOR}.github.io.git public 
  
 # generate&publish
 npx hexo g
