@@ -32,6 +32,8 @@ npx hexo d
 
 cd public
 
+git add .
+
 git commit -m "up"
 
 git push
