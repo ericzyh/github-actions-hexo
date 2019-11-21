@@ -24,11 +24,12 @@ rm -fr source
   
 git clone https://${GITHUB_ACTOR}@github.com/${GITHUB_REPOSITORY} source
 
+
+git clone https://${GITHUB_ACTOR}@github.com/${GITHUB_REPOSITORY} public 
+
 cd source 
 
 git checkout source
-
-git clone https://${GITHUB_ACTOR}@github.com/${GITHUB_REPOSITORY} public 
 
 cd ..
 
