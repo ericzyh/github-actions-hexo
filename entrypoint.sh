@@ -4,10 +4,6 @@ set -e
 # setup key
 mkdir -p /root/.ssh/
 echo "${INPUT_DEPLOYKEY}" >/root/.ssh/id_rsa
-echo "${INPUT_DEPLOYKEY}"
-echo "${INPUT_USERNAME}"
-echo "${INPUT_GITHUB_TOKEN}"
-exit
 chmod 600 /root/.ssh/id_rsa
 ssh-keyscan -t rsa github.com >>/root/.ssh/known_hosts
 
