@@ -11,12 +11,12 @@ git config --global user.name "${INPUT_USERNAME}"
 git config --global user.email "${INPUT_EMAIL}"
 
 # setup hexo env
-#npm install hexo-cli
+npm install -g hexo-cli
 #npm install
-#mkdir /workspace
-#cd /workspace 
-#npx hexo init
-#rm -fr source 
+mkdir /workspace
+cd /workspace 
+npx hexo init
+rm -fr source 
 #git clone https://${GITHUB_ACTOR}@github.com/${GITHUB_REPOSITORY} source
 #git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_REPOSITORY} public 
 #cd source 
