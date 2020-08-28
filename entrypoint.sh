@@ -17,6 +17,7 @@ mkdir /workspace
 cd /workspace 
 npx hexo init
 rm -fr source 
+echo "git clone https://${GITHUB_ACTOR}@github.com/${GITHUB_REPOSITORY} source"
 git clone https://${GITHUB_ACTOR}@github.com/${GITHUB_REPOSITORY} source
 git clone https://${GITHUB_ACTOR}:${INPUT_DEPLOYKEY}@github.com/${GITHUB_REPOSITORY} public 
 cd source 
